@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>HTML - FORMULARIO</h1>
+    <hr>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <label>
+            Primeiro Nome:
+            <br>
+            <input type="text" name="Pnome" placeholder="Digite o nome" maxlength="10" size="30" required>
+        </label>
+        <br><br>
+        <label>
+            Sobrenome:
+            <br>
+            <input type="text" name="Snome" placeholder="Digite o sobrenome" maxlength="10" size="50" required>
+        </label>
+        <br><br>
+        <fieldset>
+            <legend>Sexo</legend>
+            <label>
+                Selecione a opção correspondente:
+                <br>
+                <input type="radio" name="Sexo" value="F"> Feminino
+                <br>
+                <input type="radio" name="Sexo" value="M"> Masculino
+
+            </label>
+        </fieldset>
+        <br><br>
+        <label>
+            Senha:
+            <br>
+            <input type="password" name="Senha" maxlength="10" required>
+        </label>
+        <br><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body style="background-color: rgb(245, 230, 190);">
+    <h1>Agendamento de atividade-Disney World</h1>
+    <br>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <label>
+            RESORT:
+            <input type="text" name="resort" placeholder="Disney wordl Orlando">
+        </label>
+        <br>
+        <label>
+            Senha:
+            <input type="password" name="senha">
+        </label>
+        <br>
+        <label>
+            Preenchimento 1/5:
+            <progress max="5" value="1"></progress>
+        </label>
+        <hr>
+        <label>
+            Nome do responsável:
+            <input type="text" name="Snome" placeholder="Informe nome completo" size="60">
+        </label>
+        <br>
+        N de familiares(Incluindo criança)
+        <input type="text" name="Snomef" size="3">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <label>
+                <input type="radio" name="Sexo" value="F"> Feminino
+                <input type="radio" name="Sexo" value="M"> Masculino
+            </label>
+        </fieldset>
+        <label>
+            e-mail:
+            <input type="email" name="email" size="80">
+        </label>
+        <br>
+        <label>
+        <input type="checkbox" name="box"> Quero receber e-mails
+        </label>
+        <hr>
+        <h3>Acesso ao Parque</h3>
+        <label>
+            Data da visita:
+            <input type="date" name="dataVisita" min="2019-01-01" max="2023-12-31" required>
+            -Hora de entrada:
+            <input type="time" name="horaVisita" min="08:00:00">
+        </label>
+        <br>    
+        <label>
+            Cor da Puseira:
+            <input type="color" name="corPulseira" value="blue">
+        </label>
+        <br>
+        <label>
+            Número de atrações a visitar:
+            <input type="range" name="atracoes" min="1" max="10"> 10
+        </label>    
+        <br>
+        <label>
+            Foto da Família:
+            <input type="file" name="foto">
+        </label>
+        <br>
+        <h3>Preferencias de Comida</h3>
+        <textarea name="comida" placeholder="Insira suas preferencias aqui" rows="3" cols="80"></textarea>
+        <hr>
+        <h3>Você concorda com os termos?</h3>
+        <select name="aceite">
+            <option value="s">Sim</option>
+            <option value="n">Não</option>
+        </select>
+        <br>
+        <label>
+            <input type="submit" value="Enviar">
+        </label>
+    </form>
+</body>
+</html>
