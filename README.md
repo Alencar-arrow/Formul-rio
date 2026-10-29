@@ -8,7 +8,7 @@
 
   <!-- Botão Principal -->
   <a href="https://alencar-arrow.github.io/Formul-rio/aulatext.html" target="_blank">
-    <img src="https://img.shields.io/badge/ Acessar%20Formulário%20Ao%20Vivo-00CED1?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Acessar Formulário Ao Vivo" />
+    <img src="https://img.shields.io/badge/ Acessar%20Formulário%20Ao%20Vivo-333?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Acessar Formulário Ao Vivo" />
   </a>
 
   <br/><br/>
