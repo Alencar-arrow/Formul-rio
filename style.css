@@ -1,0 +1,149 @@
+/* Configuração Geral e Tipografia */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5e6be 0%, #e8d098 100%);
+    color: #333;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #1a365d;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+h3 {
+    color: #2b6cb0;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00CED1;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+/* Caixa Principal do Formulário */
+form {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Espaçamentos e Rótulos */
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+/* Inputs, Selects e Textareas */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Efeito de Foco com a cor Ciano */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #00CED1;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 206, 209, 0.3);
+}
+
+/* Fieldset e Legend para o Sexo */
+fieldset {
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f7fafc;
+}
+
+legend {
+    font-weight: bold;
+    color: #2b6cb0;
+    padding: 0 8px;
+}
+
+fieldset label {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+/* Checkboxes e Inputs Especiais */
+input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #00CED1;
+}
+
+input[type="color"] {
+    border: none;
+    width: 50px;
+    height: 35px;
+    cursor: pointer;
+    vertical-align: middle;
+    background: none;
+}
+
+input[type="range"] {
+    accent-color: #00CED1;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* Divisores */
+hr {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 25px 0;
+}
+
+/* Botão de Enviar Estilizado com Ciano */
+input[type="submit"] {
+    background-color: #00CED1;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #00b4b6;
+    transform: translateY(-2px);
+}
