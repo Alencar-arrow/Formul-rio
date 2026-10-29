@@ -1,18 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Agendamento - Disney World</title>
+    
+    <!-- CSS integrado para garantir que funcionam juntos imediatamente -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5e6be 0%, #e8d098 100%);
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #1a365d;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        h3 {
+            color: #2b6cb0;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #00CED1;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        form {
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="date"],
+        input[type="time"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            margin-top: 6px;
+            margin-bottom: 10px;
+            border: 2px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        input[type="email"]:focus,
+        input[type="date"]:focus,
+        input[type="time"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #00CED1;
+            outline: none;
+            box-shadow: 0 0 8px rgba(0, 206, 209, 0.3);
+        }
+
+        fieldset {
+            border: 2px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #f7fafc;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #2b6cb0;
+            padding: 0 8px;
+        }
+
+        fieldset label {
+            display: inline-block;
+            margin-right: 20px;
+            font-weight: normal;
+        }
+
+        input[type="checkbox"],
+        input[type="range"] {
+            accent-color: #00CED1;
+        }
+
+        input[type="color"] {
+            border: none;
+            width: 50px;
+            height: 35px;
+            cursor: pointer;
+            vertical-align: middle;
+            background: none;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e2e8f0;
+            margin: 25px 0;
+        }
+
+        input[type="submit"] {
+            background-color: #00CED1;
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #00b4b6;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body style="background-color: rgb(245, 230, 190);">
-    <h1>Agendamento de atividade-Disney World</h1>
+    <h1>Agendamento de atividade - Disney World</h1>
     <br>
     <form action="#" method="POST" enctype="multipart/form-data">
         <label>
             RESORT:
-            <input type="text" name="resort" placeholder="Disney wordl Orlando">
+            <input type="text" name="resort" placeholder="Disney World Orlando">
         </label>
         <br>
         <label>
@@ -30,36 +167,44 @@
             <input type="text" name="Snome" placeholder="Informe nome completo" size="60">
         </label>
         <br>
-        N de familiares(Incluindo criança)
-        <input type="text" name="Snomef" size="3">
+        <label>
+            Nº de familiares (Incluindo criança):
+            <input type="text" name="Snomef" size="3">
+        </label>
 
         <fieldset>
             <legend>Sexo</legend>
             <label>
                 <input type="radio" name="Sexo" value="F"> Feminino
+            </label>
+            <label>
                 <input type="radio" name="Sexo" value="M"> Masculino
             </label>
         </fieldset>
+        
         <label>
-            e-mail:
+            E-mail:
             <input type="email" name="email" size="80">
         </label>
         <br>
         <label>
-        <input type="checkbox" name="box"> Quero receber e-mails
+            <input type="checkbox" name="box"> Quero receber e-mails
         </label>
         <hr>
+        
         <h3>Acesso ao Parque</h3>
         <label>
             Data da visita:
             <input type="date" name="dataVisita" min="2019-01-01" max="2023-12-31" required>
-            -Hora de entrada:
+        </label>
+        <label>
+            Hora de entrada:
             <input type="time" name="horaVisita" min="08:00:00">
         </label>
         <br>    
         <label>
-            Cor da Puseira:
-            <input type="color" name="corPulseira" value="blue">
+            Cor da Pulseira:
+            <input type="color" name="corPulseira" value="#0000ff">
         </label>
         <br>
         <label>
@@ -72,18 +217,19 @@
             <input type="file" name="foto">
         </label>
         <br>
-        <h3>Preferencias de Comida</h3>
-        <textarea name="comida" placeholder="Insira suas preferencias aqui" rows="3" cols="80"></textarea>
+        
+        <h3>Preferências de Comida</h3>
+        <textarea name="comida" placeholder="Insira suas preferências aqui" rows="3" cols="80"></textarea>
         <hr>
+        
         <h3>Você concorda com os termos?</h3>
         <select name="aceite">
             <option value="s">Sim</option>
             <option value="n">Não</option>
         </select>
         <br>
-        <label>
-            <input type="submit" value="Enviar">
-        </label>
+        
+        <input type="submit" value="Enviar">
     </form>
 </body>
 </html>
